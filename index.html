@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe Score Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-wrapper">
+    <section class="score-panel">
+      <div class="player-card active" id="playerACard">
+        <span class="player-label">Player A</span>
+        <strong>X</strong>
+        <p>Score: <span id="playerAScore">0</span></p>
+      </div>
+
+      <div class="match-card">
+        <h1>Tic Tac Toe</h1>
+        <p id="statusText">Player A's turn</p>
+
+        <div class="stats">
+          <div>
+            <span id="movesCount">0</span>
+            <p>Moves</p>
+          </div>
+          <div>
+            <span id="drawCount">0</span>
+            <p>Draws</p>
+          </div>
+          <div>
+            <span id="matchesCount">0</span>
+            <p>Matches</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card" id="playerBCard">
+        <span class="player-label">Player B</span>
+        <strong>O</strong>
+        <p>Score: <span id="playerBScore">0</span></p>
+      </div>
+    </section>
+
+    <section class="board" id="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </section>
+
+    <div class="buttons">
+      <button id="newRoundBtn">New Round</button>
+      <button id="resetScoreBtn">Reset Scores</button>
+    </div>
+  </main>
+
+  <script src="scriptt.js"></script>
+</body>
+</html>
